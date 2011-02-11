@@ -76,7 +76,7 @@ namespace :package do
                 File.open("debian/changelog", "w") do |f|
                     f.puts("#{PROJ_NAME} (#{CURRENT_VERSION}-#{CURRENT_RELEASE}) unstable; urgency=low")
                     f.puts
-                    f.puts("  * Automated release for #{CURRENT_VERSION}-#{CURRENT_RELEASE} by rake deb")
+                    f.puts("  * Automated release for #{CURRENT_VERSION}-#{CURRENT_RELEASE} by rake package:deb")
                     f.puts
                     f.puts("    See #{PROJ_URL} for full details")
                     f.puts

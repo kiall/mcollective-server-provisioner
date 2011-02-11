@@ -1,0 +1,11 @@
+# Defaults for mcollective-server-provisioner initscript
+# sourced by /etc/init.d/mcollective-server-provisioner
+# installed at /etc/default/mcollective-server-provisioner
+# by the maintainer scripts
+
+#
+# This is a POSIX shell fragment
+#
+
+# Additional options that are passed to the Daemon.
+DAEMON_OPTS=""
