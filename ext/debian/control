@@ -1,0 +1,28 @@
+Source: mcollective-server-provisioner
+Section: utils
+Priority: extra
+Maintainer: Kiall Mac Innes <kiall@managedit.ie>
+Build-Depends: debhelper (>= 7.0.50~)
+Standards-Version: 3.8.0
+Homepage: http://www.puppetlabs.com/
+Vcs-Git: git://github.com/ripienaar/mcollective-server-provisioner.git
+Vcs-Browser: https://github.com/ripienaar/mcollective-server-provisioner
+
+Package: mcollective-server-provisioner
+Architecture: all
+Depends: ruby (>= 1.8.1), mcollective-common (>= 1.1.0), ${misc:Depends}
+Description: MCollective Server Provisioner
+ A tool that will take machines running mcollective and a small provisioning
+ agent and bootstrap them through the process of running puppet.
+ .
+ Server Component
+
+Package: mcollective-agent-provision
+Architecture: all
+Depends: ruby (>= 1.8.1), mcollective-common (>= 1.1.0), puppet (>= 2.6.1), ${misc:Depends}
+Description: MCollective Server Provisioner Agent
+ A tool that will take machines running mcollective and a small provisioning
+ agent and bootstrap them through the process of running puppet.
+ .
+ Client Component
+
